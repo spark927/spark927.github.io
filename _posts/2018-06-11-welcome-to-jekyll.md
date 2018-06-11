@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "关于安卓APP自动化"
+date:   2018-06-11 14:15:39
+categories: jekyll update
+---
+
+1. 环境搭建
+
+2. 开始第一个例子
+
+   - 获取APP主类名和主包名
+
+     cmd进入sdk中的build-tools文件夹中，找到aapt.exe，运行
+
+     ```
+     aapt dump badging *.apk
+     ```
+
+   - 打开uiautomatorviewer获取元素
+
+     SDK自带，具体目录\android-sdk-windows\tools\uiautomatorviewer.bat
+
+   - ​编写程序，运行，完成。
+
+
+
+遇到问题，new AppiumDriver报错，Java-client换个低版本的包
+
+ps：架包下载参考http://blog.sina.com.cn/s/blog_aed19c1f0102vc78.html
