@@ -9,7 +9,7 @@ twitter_username: spark
 github_username:  spark927
 
 # Build settings
-highlighter: pygments
+rouge: pygments
 markdown: kramdown
 kramdown:
     input: GFM
