@@ -3,6 +3,8 @@ layout: post
 title:  "Appium自动化测试-封装参数"
 date:   2018-06-09 14:51:30
 categories: jekyll update
+img: # Add image post (optional)
+tags: [appium]
 ---
 
 
@@ -11,8 +13,7 @@ by spark
 2018/5/28
 
 ​	手机参数设置的封装，这里采用csv进行数据保存，java代码实现，如下：
-
-```
+{% highlight java %}
 ArrayList<String> array = new ArrayList<String>();
 		int i = 0;
 		try {
@@ -29,8 +30,7 @@ ArrayList<String> array = new ArrayList<String>();
 			System.out.println(array);
 			return array;
 		} 
-```
-
+{% endhighlight %}
 ​	这里顺便复习了一下java的知识
 
 ```

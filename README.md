@@ -1,5 +1,7 @@
-This is a start.
+这是一个开始。
 
-Here, I want to take notes for my learning.
+在这里我会记录每次学习的笔记，希望和大家一起分享。
 
-If you are interested in me , please send emails to me.
+给博客换了个新面貌，比自己造轮子好多了。
+
+PS：网站改自https://github.com/artemsheludko/flexible-jekyll，感谢博主。

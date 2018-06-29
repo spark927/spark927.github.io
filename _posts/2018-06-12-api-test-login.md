@@ -28,7 +28,7 @@ categories: jekyll update
 
 主要代码如下：
 
-```java
+```
 public class test {
 	
 	  public static InputStream http(String url, byte[] PostData) {
