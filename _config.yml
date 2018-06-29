@@ -1,20 +1,36 @@
-# Site settings
-title: spark
-email: 3241651990@qq.com
+title: Hello! I'm spark
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://spark927.github.io" # the base hostname & protocol for your site
-twitter_username: spark
-github_username:  spark927
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Build settings
+# Author Settings
+author: spark # add your name
+author-img: time.jpg # add your photo
+about-author: 星并不远，梦并不远，只要你踮起脚尖。 # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: spark927 # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
+
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
 markdown: kramdown
-highlighter: pygments
 kramdown:
     input: GFM
     
 paginate: 5
 paginate_path: "page:num"
 
-plugins: [jekyll-paginate]
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
