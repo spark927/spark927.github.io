@@ -3,6 +3,9 @@ layout: post
 title:  "Protobuf 简单例子"
 date:   2018-06-12 13:51:30
 categories: jekyll update
+img: software.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [protobuf]
 ---
 
 
@@ -34,26 +37,26 @@ categories: jekyll update
 
 2. 完成之后，将数据进行序列化时
 
-   ```
+{% highlight java %}
    Login.Builder builder = Login.newBuilder();
    	builder.setName("tom");
    	builder.setPwd("111111");
    	Login login = builder.build();
 
-   login.toByteArray();  #将proto对象转换成字节流
-   ```
+   login.toByteArray();  //将proto对象转换成字节流
+{% endhighlight %}
 
 3. 反序列化
 
-   ```
-   byte[] array = login.toByteArray();  #将byte数据反序列化成proto对象
+{% highlight java %}
+   byte[] array = login.toByteArray();  //将byte数据反序列化成proto对象
 
    try{
      Login login1 = Login.parseForm(array);
    } catch(InvalidProtocolBufferException e) {
      e.printStackTrace();
    }
-   ```
+{% endhighlight %}
 
    ​
 

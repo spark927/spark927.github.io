@@ -3,6 +3,9 @@ layout: post
 title:  "Protobuf 接口测试-登录"
 date:   2018-06-12 14:51:30
 categories: jekyll update
+img: workflow.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [接口测试, protobuf]
 ---
 
 
@@ -28,7 +31,7 @@ categories: jekyll update
 
 主要代码如下：
 
-```
+{% highlight java %}
 public class test {
 	
 	  public static InputStream http(String url, byte[] PostData) {
@@ -106,7 +109,6 @@ public class test {
 	 }  
  }  
 }
-
-```
+{% endhighlight %}
 
 PS:因为是HTTPS请求，需要认证，这里了解到发送方可以忽略，该部分功能参考网上已有解决方案。
