@@ -3,6 +3,9 @@ layout: post
 title:  "Appium等待时间"
 date:   2018-06-10 15:51:30
 categories: jekyll update
+img: how-to-start.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [appium]
 ---
 
 
@@ -16,9 +19,9 @@ by spark
 
 2. 隐式等待 implicitlyWait()
 
-   ```
+{% highlight java %}
    driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-   ```
+{% endhighlight %}
 
    全局等待30秒，不管元素是否加载完成
 
@@ -28,7 +31,7 @@ by spark
 
 3. *显式等待 WebDriverWait()* 
 
-   ```
+{% highlight java %}
    WebDriverWait wait = new WebDriverWait(driver, 60);
        WebElement e= wait.until(new  ExpectedCondition<WebElement>() {
                @Override
@@ -36,7 +39,7 @@ by spark
                    return d.findElement(By.id("q"));
                }
            })
-   ```
+{% endhighlight %}
 
    默认情况下，WebDriverWait每500毫秒调用一次ExceptionCondition，知道有成功的返回，如果超过时间没有成功返回，将抛出异常。
 
@@ -48,17 +51,17 @@ by spark
 
 自己封装了一个方法，参考上链接
 
-```
-	public static void wait(AndroidDriver driver, String id) {
-		WebElement we = new AndroidDriverWait(driver,30)
-	    		  .until(new ExpectedCondition<WebElement>() {
-					@Override
-					public WebElement apply(AndroidDriver d) {
-						return d.findElementById(id);
-					}
-				});
-	}
-```
+{% highlight java %}
+public static void wait(AndroidDriver driver, String id) {
+	WebElement we = new AndroidDriverWait(driver,30)
+    		  .until(new ExpectedCondition<WebElement>() {
+				@Override
+				public WebElement apply(AndroidDriver d) {
+					return d.findElementById(id);
+				}
+			});
+}
+{% endhighlight %}
 
 实现过程中遇到的问题：
 

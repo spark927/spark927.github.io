@@ -3,6 +3,9 @@ layout: post
 title:  "Appium滑动页面"
 date:   2018-06-09 15:51:30
 categories: jekyll update
+img: how-to-start.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [appium]
 ---
 
 
@@ -16,7 +19,7 @@ by spark
 
 代码如下：
 
-```
+{% highlight java %}
 	/**
 	 * 每次向上滑动100像素,并判断是否滑到底部
 	 * @param driver
@@ -55,7 +58,7 @@ by spark
 			}
 		} while (flag == false);
 	}
-```
+{% endhighlight %}
 
 遇到问题：
 
